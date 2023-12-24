@@ -1,0 +1,371 @@
+/* VARIABLES */
+
+:root {
+    --main-black-color: #000;
+    --main-white-color: #fff;
+    --main-font-size: 15    px;
+    --main-border-radius: 5px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", "Arial", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+    height: auto;
+}
+
+/* Container */
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* End Container */
+
+/* Navbar Start */
+
+.site-header {
+    padding: 48px 0;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--main-white-color);
+}
+
+.site-inner {
+    display: flex;
+    align-items: center;
+}
+
+.site-logo {
+    margin-right: 45.43px;
+}
+
+.navbar {
+    margin-right: auto;
+}
+
+.navbar-list {
+    display: flex;
+}
+
+.navbar-link {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: #9E9AA8;
+}
+
+.navbar-link:hover {
+    color:  #34313D;
+}
+
+.navbar-btn {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.navbar-login {    
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    margin-right: 37px;
+    color: #9E9AA8;
+}
+
+.navbar-sign-up {
+    background-color: #2BD0D0;
+    padding: 9px 24px;
+    color: var(--main-white-color);
+    font-size: var(--main-font-size);
+    border-radius: 28px;
+}
+
+.navbar-sign-up:hover {
+    background: #9AE3E3;
+}
+
+/* Navbar Start Finish */
+
+/* Site main start */
+
+/* Hero section */
+
+.hero {
+    background-image: url("../images/hero-bg.svg");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 460px);
+    margin-top: 100px;
+    padding: 250px;
+    position: relative;
+}
+
+.hero-header {
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: -2px;
+    color: #34313D;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-title {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 36px;
+    letter-spacing: 0.15px;
+    color: #9E9AA8;
+    padding: 0;
+    margin: 0;
+    margin-top: 8px;
+}
+
+.hero-search-box {
+    position: absolute;
+    top: 670px;
+    width: 1100px;
+    height: 168px;
+    background-image: url("../images/hero-bottom-bg.png");
+    border-radius: 10px;
+    padding: 52px 64px;
+}
+
+.hero-search-box input {
+    padding: 14px 32px;
+    border: none;
+    border-radius: 10px;
+    height: 64px;
+    width: 769px;
+    margin-right: auto;
+}
+
+.hero-search-box button {
+    padding: 14px 32px;
+    border: none;
+    height: 64px;
+    border-radius: 10px;
+    background: #2BD0D0;
+    border-radius: 10px;
+    color: var(--main-white-color);
+}
+
+.hero-search-box button:hover {
+    background: #9AE3E3;
+}
+
+/* End of Hero section */
+
+/* Statiscs section */
+
+.statiscs {
+    padding-top: 200px;
+    background-color: #EFF1F7;
+}
+
+.statics-heading {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #34313D;
+    margin-bottom: 18px;
+}
+
+.statics-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.122727px;
+    color: #9E9AA8;
+}
+
+.statics-list {
+    margin-top: 56px;
+    position: relative;
+    background-image: url("../images/statics-oval-line.png");
+    background-repeat: no-repeat;
+    background-position: calc(50%) calc(50% + 40px);
+}
+
+.statics-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 120px;
+}
+
+.statics-item-one,
+.statics-item-two,
+.statics-item-three  {
+    width: 350px;
+    height: 267px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    padding: 0 32px;
+}
+
+.statics-item-two {
+    margin-top: 100px;
+}
+
+.statics-item-three {
+    margin-top: 200px;
+}
+
+.statics-item-one::before {
+    position: absolute;
+    top: 60px;
+    left: 32px;
+    display: inline-block;
+    background-image: url("../images/statics-before-img-one.png");
+    width: 88px;
+    height: 88px;
+    content: "";
+}
+
+.statics-item-two::before {
+    position: absolute;
+    top: 110px;
+    left: 410px;
+    display: inline-block;
+    background-image: url("../images/statics-before-img-two.png");
+    width: 88px;
+    height: 88px;
+    content: "";
+}
+
+.statics-item-three::before {
+    position: absolute;
+    top: 166px;
+    left: 793px;
+    display: inline-block;
+    background-image: url("../images/statics-before-img-three.png");
+    width: 88px;
+    height: 88px;
+    content: "";
+}
+
+.statics-item-heading {
+    margin-top: 77px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+    color: #34313D;
+    margin-bottom: 12px;
+}
+
+.statics-item-title {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 26px;    
+    color: #9E9AA8;    
+}
+
+/* End of Statiscs section */
+
+/* Article */
+
+.article-box {
+    background-image: url("../images/aside-img-bg.png");
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.article-heading {
+    padding-top: 57px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #FFFFFF; 
+    padding-bottom: 32px;   
+}
+
+.article-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-btn a {
+    color: #fff;
+    padding: 13px 40px;
+    background-color: #2BD0D0;
+    border-radius: 28px;
+}
+
+.article-btn a:hover {
+    background: #9AE3E3;
+}
+
+/* End of Article */
+
+/* Site main begin */
+
+
+/* Footer Start */
+
+.footer {
+    background-color: #232127;
+    padding: 71.5px 0 70px 0px;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-strong {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    color: #FFFFFF;
+    padding-bottom: 22px;
+}
+
+.footer-list {
+    margin-top: 22px;
+}
+
+.footer-link {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.234375px;
+    color: #BFBFBF;    
+}
+
+.footer-link:hover {
+    color: #2BD0D0;;
+}
+
+/* End of Footer Start */
